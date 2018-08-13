@@ -2,12 +2,12 @@ public class SudokuValidator {
 
     public static boolean isValid(SudokuMatrix matrix, SudokuPoint point) {
 
-        boolean SudokuFinishedStatus = true;
+        boolean SudokuFinishedStatus = false;
 
         for (int i = 0; i <= 8; i++) {
             for (int z = 0; z <= 8; z++) {
                 if (matrix.getValue(i, z) == 0) {
-                    SudokuFinishedStatus = false;
+                    SudokuFinishedStatus = true;
                 }
             }
         }
